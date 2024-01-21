@@ -117,7 +117,12 @@
 				"spaced-comment": [
 					"error",
 					"always",
-					{ "block": { "balanced": true }, "markers": ["/"] }
+					{
+						"block": {
+							"balanced": true
+						},
+						"markers": ["/"]
+					}
 				]
 			}
 		}

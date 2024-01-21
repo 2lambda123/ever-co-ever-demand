@@ -50,7 +50,6 @@
 			"APARTMENT": "Apartmento",
 			"COORDINATES": "Coordenadas"
 		},
-
 		"EMAIL_POP_UP": {
 			"CUSTOMER_EMAIL": "Correo del Cliente",
 			"SEND_E_MAIL": "Enviar Correo"
@@ -165,7 +164,6 @@
 					"PHONE_REQUIRED": "Teléfono requerido",
 					"EMAIL_IS_REQUIRED": "Correo requerido",
 					"MUST_CONTAIN_ONLY_LETTERS": "Debe contener sólo letras",
-
 					"PHONE_MUST_CONTAINS_ONLY(special_signs)AND_DIGIT_CHARACTER": "Teléfono debe contener solo números"
 				}
 			}
@@ -312,7 +310,6 @@
 			"PRICE": "Precio",
 			"COUNT": "Cantidad",
 			"LANGUAGE": "Idioma",
-
 			"COUNT_PLACEHOLDER": "0",
 			"DRAG&DROP_FILE_HERE": "Arrastre Archivo Aquí",
 			"DRAG&DROP_PICTURE_HERE": "Arrastre Imágen Aquí",
@@ -341,7 +338,6 @@
 			"EMAIL": "Correo",
 			"PHONE": "Teléfono",
 			"ADDRESS": "Dirección",
-
 			"IMAGE": "Imágen",
 			"PRODUCT": "Producto",
 			"PRICE": "Precio",
@@ -353,7 +349,6 @@
 			"FIRST_NAME": "Nombre",
 			"LAST_NAME": "Apellido",
 			"EMAIL_IS_INVALID": "Email es invalido",
-
 			"EMAIL_IS_ALREADY_IN_USE": "Correo esta en uso",
 			"NEXT": "Siguiente",
 			"ADD_CUSTOMER": "Agregar Cliente",
@@ -370,7 +365,6 @@
 			"APARTMENT": "Apartamento",
 			"SHOW_COORDINATES": "Mostrar Coordenaas",
 			"LATITUDE": "Latitud",
-
 			"LONGITUTE": "Longitud",
 			"HOUSE_IS_REQUIRED": "Número de Puerta requerido"
 		},
@@ -397,7 +391,6 @@
 		"OR_BROWSE": "Buscar",
 		"CLICK_TO_UPLAOD_PICTURE": "Click para Cargar Imágenes",
 		"CANCEL": "Cancelar",
-
 		"UPDATE": "Modificar",
 		"ENGLISH": "Inglés",
 		"HEBREW": "Hebreo",

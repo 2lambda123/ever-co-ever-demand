@@ -1,8 +1,6 @@
 {
 	"extends": ["tslint:latest", "tslint-config-prettier"],
-	"rulesDirectory": [
-		"../../node_modules/codelyzer"
-	],
+	"rulesDirectory": ["../../node_modules/codelyzer"],
 	"linterOptions": {
 		"exclude": ["node_modules", "dist"]
 	},
@@ -61,13 +59,7 @@
 		"component-selector": [
 			true,
 			"element",
-			[
-				"google",
-				"e-cu",
-				"ngx",
-				"ea",
-				"es"
-			],
+			["google", "e-cu", "ngx", "ea", "es"],
 			"kebab-case"
 		],
 		"no-attribute-parameter-decorator": true,

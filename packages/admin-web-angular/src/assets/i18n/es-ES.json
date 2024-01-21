@@ -71,14 +71,12 @@
 		"CHARTS": {
 			"ORDERS": "Pedidos",
 			"PROFIT": "Renta",
-
 			"TOTAL_ORDERS": "Pedidos",
 			"TOTAL_COMPLETED_ORDERS": "Pedidos completados",
 			"TOTAL_CANCELLED_ORDERS": "Pedidos cancelados",
 			"TOTAL_REVENUE_ALL_ORDERS": "Facturación de pedidos completados y cancelados",
 			"TOTAL_REVENUE_COMPLETED_ORDERS": "Facturación de pedidos completados",
 			"TOTAL_LOST_REVENUE_CANCELLED_ORDERS": "Facturación perdida de pedidos cancelados",
-
 			"PAYMENT": "Pago",
 			"CANCELED": "Cancelado",
 			"ALL_ORDERS": "Todos los Pedidos",
