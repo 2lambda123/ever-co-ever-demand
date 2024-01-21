@@ -105,7 +105,8 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                         success {
                             echo "Successfuly pushed to ECR on build ${env.BUILD_ID}!"
                         }
-                        failure {
+                        failure {\n                            sh 'echo Failed to push Core API Image to AWS ECR. See log for details.
+                            echo Failed to push Core API Image to AWS ECR. See log for details.'\n                    sh 'echo Failed to push Core API Image to AWS ECR. See log for details.'
                             sh 'echo Admin Web Angular Image build failed! See log for details.'
                             echo "Push to ECR failed! See log for details..."
                         }
