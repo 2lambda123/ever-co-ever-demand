@@ -46,7 +46,8 @@ pipeline {
                     echo "Cloning successful..."
                 }
                 failure {
-                    echo "Cloning failed! See log for details. Terminating..."
+                    echo "Cloning failed! See log for details.
+sh 'echo Cloning failed! Git command failed to clone repository'
                 }
             }
         }
