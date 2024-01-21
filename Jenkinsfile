@@ -62,6 +62,7 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                             echo "Image for Core API built!"
                         }
                         failure {
+                            sh 'echo Admin Web Angular Image build failed! See log for details.'
                             sh 'echo Core API Image build failed! See log for details.
                             '
                             sh 'echo Image build failed! See log for details.'
@@ -105,6 +106,7 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                             echo "Successfuly pushed to ECR on build ${env.BUILD_ID}!"
                         }
                         failure {
+                            sh 'echo Admin Web Angular Image build failed! See log for details.'
                             echo "Push to ECR failed! See log for details..."
                         }
                     }
