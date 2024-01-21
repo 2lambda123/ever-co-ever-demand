@@ -54,15 +54,7 @@
 		"unified-signatures": true,
 		"variable-name": false,
 		"directive-selector": [true, "attribute", "ngx", "camelCase"],
-		"component-selector": [
-			true,
-			"element",
-			[
-				"ngx",
-				"ea"
-			],
-			"kebab-case"
-		],
+		"component-selector": [true, "element", ["ngx", "ea"], "kebab-case"],
 		"no-attribute-parameter-decorator": true,
 		"no-forward-ref": true,
 		"no-input-rename": true,

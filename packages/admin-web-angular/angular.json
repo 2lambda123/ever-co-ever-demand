@@ -38,9 +38,7 @@
 								"output": "/assets/svg"
 							}
 						],
-						"allowedCommonJsDependencies": [
-							"highlight.js"
-						],
+						"allowedCommonJsDependencies": ["highlight.js"],
 						"styles": [
 							"../../node_modules/bootstrap/dist/css/bootstrap.css",
 							"../../node_modules/typeface-exo/index.css",

@@ -31,21 +31,14 @@
 		"noUnusedLocals": false,
 		"types": ["node", "reflect-metadata", "googlemaps", "jasmine"]
 	},
-	"files": [
-        "src/main.ts",
-        "src/polyfills.ts"
-    ],
+	"files": ["src/main.ts", "src/polyfills.ts"],
 	"include": [
 		"src/**/*d.ts",
 		"./*.ts",
 		"../common/**/*d.ts",
 		"../common-angular/**/*d.ts"
 	],
-	"exclude": [
-		"node_modules",
-		"src/**/*.spec.ts",
-		"src/**/__tests__/*.ts"
-	],
+	"exclude": ["node_modules", "src/**/*.spec.ts", "src/**/__tests__/*.ts"],
 	"atom": {
 		"rewriteTsconfig": false
 	},

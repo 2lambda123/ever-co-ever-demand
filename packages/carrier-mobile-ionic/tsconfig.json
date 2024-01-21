@@ -31,10 +31,7 @@
 		"noUnusedLocals": false,
 		"types": ["node", "reflect-metadata", "googlemaps", "jasmine"]
 	},
-	"files": [
-        "src/main.ts",
-        "src/polyfills.ts"
-    ],
+	"files": ["src/main.ts", "src/polyfills.ts"],
 	"include": [
 		"./*.ts",
 		"src/**/*.d.ts",

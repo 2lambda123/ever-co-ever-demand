@@ -59,12 +59,7 @@
 		"component-selector": [
 			true,
 			"element",
-			[
-				"e-cu",
-				"ngx",
-				"ea",
-				"es"
-			],
+			["e-cu", "ngx", "ea", "es"],
 			"kebab-case"
 		],
 		"no-attribute-parameter-decorator": true,
