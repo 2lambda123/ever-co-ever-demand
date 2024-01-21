@@ -139,6 +139,7 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                         sh "docker rmi ${GITHUB_DOCKER_REPO}/${IMAGE_CORE_API}"
                     }
                     post {
+        new line(s) to replace
                         success {
                             echo "Successfully pushed to GitHub on build ${env.BUILD_ID}!"
                         }
