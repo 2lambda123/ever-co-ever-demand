@@ -142,6 +142,9 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                             echo "Successfully pushed to GitHub on build ${env.BUILD_ID}!"
                         }
                         failure {
+sh 'echo Failed to push Core API Image to GitHub. See log for details.'
+sh 'echo Failed to push Core API Image to GitHub: $IMAGE_CORE_API. See log for details.'
+sh 'echo Failed to push Core API Image to GitHub. See log for details.'
                             echo "Push to GitHub failed! See log for details..."
                         }
                     }
