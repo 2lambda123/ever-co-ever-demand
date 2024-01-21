@@ -62,6 +62,7 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                             echo "Image for Core API built!"
                         }
                         failure {
+                            sh 'echo Failed to push Admin Web Angular Image to GitHub. See log for details.'
                             sh 'echo Admin Web Angular Image build failed! See log for details.'
                             sh 'echo Core API Image build failed! See log for details.
                             '
@@ -142,6 +143,7 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                             echo "Successfully pushed to GitHub on build ${env.BUILD_ID}!"
                         }
                         failure {
+sh 'echo Failed to push Admin Web Angular Image to GitHub. See log for details.' {
 sh 'echo Failed to push Core API Image to GitHub. See log for details.'
 sh 'echo Failed to push Core API Image to GitHub: $IMAGE_CORE_API. See log for details.'
 sh 'echo Failed to push Core API Image to GitHub. See log for details.'
