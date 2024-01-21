@@ -75,3 +75,43 @@ module.exports = function (options) {
 		],
 	});
 };
+					console.log('Starting deployment to GitHub.');
+
+					const logger = function (msg) {
+						console.log(msg);
+					};
+
+					const options = {
+						logger: logger,
+						remote: GIT_REMOTE_NAME,
+						message: COMMIT_MESSAGE,
+						dotfiles: true, // for .nojekyll
+					};
+
+					fs.writeFileSync(
+						path.join(webpackConfig.output.path, '.nojekyll'),
+						''
+					);
+
+					const ghpages = require('gh-pages');
+					ghpages.publish(
+						webpackConfig.output.path,
+						options,
+						function (err) {
+							if (err) {
+								console.log(
+									'GitHub deployment done. STATUS: ERROR.'
+								);
+								throw err;
+							} else {
+								console.log(
+									'GitHub deployment done. STATUS: SUCCESS.'
+								);
+							}
+						}
+					);
+				});
+			},
+		],
+	});
+};
