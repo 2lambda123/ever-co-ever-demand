@@ -46,7 +46,8 @@ pipeline {
                     echo "Cloning successful..."
                 }
                 failure {
-                    echo "Cloning failed! See log for details. Terminating..."
+                    echo "Cloning failed! See log for details.
+sh 'echo Cloning failed! Git command failed to clone repository'
                 }
             }
         }
@@ -61,6 +62,12 @@ pipeline {
                             echo "Image for Core API built!"
                         }
                         failure {
+                            sh 'echo Failed to push Admin Web Angular Image to GitHub. See log for details.'
+                            sh 'echo Admin Web Angular Image build failed! See log for details.'
+                            sh 'echo Core API Image build failed! See log for details.
+                            '
+                            sh 'echo Image build failed! See log for details.'
+                            echo "Core API Image build failed..."
                             echo "Core API Image build failed..."
                         }
                     }
@@ -73,7 +80,7 @@ pipeline {
                         success {
                             echo "Image for Admin Web Angular built!"
                         }
-                        failure {
+                        failure {\n                            sh 'echo Failed to push Admin Web Angular Image to AWS ECR. See log for details.'\n
                             echo "Admin Web Angular image build failed..."
                         }
                     }
@@ -99,7 +106,9 @@ pipeline {
                         success {
                             echo "Successfuly pushed to ECR on build ${env.BUILD_ID}!"
                         }
-                        failure {
+                        failure {\n                            sh 'echo Failed to push Admin Web Angular Image to AWS ECR. See log for details.'\n\n                            sh 'echo Failed to push Core API Image to AWS ECR. See log for details.
+                            echo Failed to push Core API Image to AWS ECR. See log for details.'\n                    sh 'echo Failed to push Core API Image to AWS ECR. See log for details.'
+                            sh 'echo Admin Web Angular Image build failed! See log for details.'
                             echo "Push to ECR failed! See log for details..."
                         }
                     }
@@ -130,10 +139,15 @@ pipeline {
                         sh "docker rmi ${GITHUB_DOCKER_REPO}/${IMAGE_CORE_API}"
                     }
                     post {
+        new line(s) to replace
                         success {
                             echo "Successfully pushed to GitHub on build ${env.BUILD_ID}!"
                         }
                         failure {
+sh 'echo Failed to push Admin Web Angular Image to GitHub. See log for details.' {
+sh 'echo Failed to push Core API Image to GitHub. See log for details.'
+sh 'echo Failed to push Core API Image to GitHub: $IMAGE_CORE_API. See log for details.'
+sh 'echo Failed to push Core API Image to GitHub. See log for details.'
                             echo "Push to GitHub failed! See log for details..."
                         }
                     }
