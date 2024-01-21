@@ -1,13 +1,22 @@
 {
-	"extends": "../../tsconfig.base.json",
-	"compilerOptions": {
-		"baseUrl": "./src",
-		"outDir": "./build",
-		"rootDir": "./src",
-		"types": ["node", "reflect-metadata", "jest"],
-		"paths": {
-			"@pyro/*": ["@pyro/*", "/@pyro/*"]
-		}
-	},
-	"include": ["./src/**/*.ts"]
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "outDir": "./build",
+    "rootDir": "./src",
+    "types": [
+      "node",
+      "reflect-metadata",
+      "jest"
+    ],
+    "paths": {
+      "@pyro/*": [
+        "@pyro/*",
+        "/@pyro/*"
+      ]
+    }
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
 }
