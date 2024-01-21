@@ -62,6 +62,10 @@ sh 'echo Cloning failed! Git command failed to clone repository'
                             echo "Image for Core API built!"
                         }
                         failure {
+                            sh 'echo Core API Image build failed! See log for details.
+                            '
+                            sh 'echo Image build failed! See log for details.'
+                            echo "Core API Image build failed..."
                             echo "Core API Image build failed..."
                         }
                     }
